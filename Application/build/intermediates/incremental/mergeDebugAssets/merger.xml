@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/kapi/Documents/JK-Mobile/workspace/Android/android-FingerAuthenSample-Asym/Application/src/main/assets"/><source path="/Users/kapi/Documents/JK-Mobile/workspace/Android/android-FingerAuthenSample-Asym/Application/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/kapi/Documents/JK-Mobile/workspace/Android/android-FingerAuthenSample-Asym/Application/src/debug/assets"/></dataSet></merger>
