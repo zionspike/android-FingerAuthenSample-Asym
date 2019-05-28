@@ -113,6 +113,7 @@ public void onAuthenticated() {
 }
 ```
 
+![screenshot](screenshots/android-FingerAuthenSample-Asym.gif)
 
 
 ------------------------------------------------------------------------------------------------------------
