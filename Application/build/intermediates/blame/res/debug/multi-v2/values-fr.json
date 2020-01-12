@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kapi/Documents/JK-Mobile/workspace/Android/android-FingerAuthenSample-Asym/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
+            "outputFile": "/Users/kapi/Documents/JK-Kapi/GITHUBs/android-FingerAuthenSample-Asym/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "/Users/kapi/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/483e1658637691cb6634c31047fc98bd/res/values-fr/values-fr.xml",

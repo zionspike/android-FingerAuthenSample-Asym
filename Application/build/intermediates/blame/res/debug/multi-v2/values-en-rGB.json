@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kapi/Documents/JK-Mobile/workspace/Android/android-FingerAuthenSample-Asym/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "/Users/kapi/Documents/JK-Kapi/GITHUBs/android-FingerAuthenSample-Asym/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/Users/kapi/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/483e1658637691cb6634c31047fc98bd/res/values-en-rGB/values-en-rGB.xml",

@@ -199,6 +199,10 @@ public class MainActivity extends AppCompatActivity {
                             // Require the user to authenticate with a fingerprint to authorize
                             // every use of the private key
                             .setUserAuthenticationRequired(true)
+
+                            // This will notify the exception when a new finger is enrolled
+                            // Mininum API version is 24
+                            .setInvalidatedByBiometricEnrollment(true)
                             .build());
             mKeyPairGenerator.generateKeyPair();
         } catch (InvalidAlgorithmParameterException e) {

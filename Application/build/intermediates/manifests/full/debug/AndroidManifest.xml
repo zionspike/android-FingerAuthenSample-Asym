@@ -20,7 +20,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="23"
+        android:minSdkVersion="24"
         android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
@@ -31,7 +31,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/application_name"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light" >
         <activity
             android:name="com.example.android.fingerprintdialog.MainActivity"

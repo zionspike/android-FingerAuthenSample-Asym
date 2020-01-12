@@ -19,9 +19,9 @@ By performing authentication with fingerprint the user must follow the following
 
 Application
 ------------
-The application will create a key pair which are private and public key. Once the keys have been generated, the public key will be enrolled to the server and the private key will be stored in KeyStore. While creating a key pair, the keys will be initialized with __setUserAuthenticationRequired(true)__ to allow only authenticated user to access the private key. After successful login using fingerprint, the application will use private key to sign a secret message which could be token, device ID, or other authentication information needed in order to perform login to the server. Anyway, the server should generate a nonce which is a random number for each key enrollment and authentication to prevent replay attack from a malicious user.
+The application will create a key pair which are private and public key. Once the keys have been generated, the public key will be enrolled to the server and the private key will be stored in KeyStore. While creating a key pair, the keys will be initialized with __setUserAuthenticationRequired(true)__ to allow only authenticated user to access the private key. After successful login using fingerprint, the application will use private key to sign a secret message which could be token, device ID, or other authentication information needed in order to perform login to the server. Anyway, the server should generate a nonce which is a random number for each key enrollment and authentication to prevent replay attack from a malicious user. __setInvalidatedByBiometricEnrollment(true)__ will invalidate the key stored in the KeyStore if a new finger is enrolled to the device.
 ```
-public void createKeyPair() {
+   public void createKeyPair() {
         // The enrolling flow for fingerprint. This is where you ask the user to set up fingerprint
         // for your flow. Use of keys is necessary if you need to know if the set of
         // enrolled fingerprints has changed.
@@ -41,6 +41,10 @@ public void createKeyPair() {
                             // Require the user to authenticate with a fingerprint to authorize
                             // every use of the private key
                             .setUserAuthenticationRequired(true)
+
+                            // This will notify the exception when a new finger is enrolled
+                            // Mininum API version is 24
+                            .setInvalidatedByBiometricEnrollment(true)
                             .build());
             mKeyPairGenerator.generateKeyPair();
         } catch (InvalidAlgorithmParameterException e) {
